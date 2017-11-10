@@ -43,8 +43,7 @@ secondary: edit previous, secondary complement: delete previous;
 4 color schemes, just like spotify, google, etc. all web apps do
 */
 
-class Body extends React.Component
-{
+class Body extends React.Component {
     componentWillMount()
     {
         this.props.getBody();
