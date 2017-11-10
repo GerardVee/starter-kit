@@ -1,0 +1,2 @@
+#!/bin/sh
+./node_modules/.bin/eslint -c linters/eslint.json src/ && ./node_modules/.bin/jest

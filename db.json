@@ -1,0 +1,26 @@
+{
+  "contents": [
+    {
+      "id": 1,
+      "title": "Demo App",
+      "body": "Click on a button and load the desired comment!"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "I enjoy not running tests.",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "I enjoy eating no calories.",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "Exercise is unhealthy.",
+      "postId": 3
+    }
+  ]
+}
