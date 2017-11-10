@@ -36,7 +36,12 @@ const colorCode =
             fill: 'none'
         }
     }
-};*/
+};
+don't forget react-color and react webgl;
+primary: submit current, primary complement: delete current;
+secondary: edit previous, secondary complement: delete previous;
+4 color schemes, just like spotify, google, etc. all web apps do
+*/
 
 class Body extends React.Component
 {

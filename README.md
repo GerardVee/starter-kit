@@ -51,7 +51,7 @@ then in another shell, edit your .env file to contain your new url as the BASE_U
 yarn run dev
 ```
 
-go make it available for all to see using localtunnel.
+to make it available for all to see using localtunnel.
 
 #### Testing
 

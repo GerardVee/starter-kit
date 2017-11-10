@@ -29,6 +29,7 @@
     "polished": "^1.9.0",
     "react": "^16.0.0",
     "react-autosuggest": "^9.3.2",
+    "react-color": "^2.13.8",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-redux-form": "^1.14.2",
