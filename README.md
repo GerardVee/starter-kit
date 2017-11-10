@@ -95,3 +95,6 @@ To have a semented code style/setup for [site](https://gerardvee.com/).
 
 I'd like to thank [this](https://chrisdown.name/2015/09/27/auto-merging-successful-builds-from-travis-ci.html) travis guide. It really helped!
 Of course, the code came from [here](https://github.com/cdown/travis-automerge), feel free to star and look around!
+
+Look into this [site](http://krisjordan.com/essays/setting-up-push-to-deploy-with-git), to get an idea about setting up your own deployable web server.
+Also this [site](https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa) is very valuable, so you won't get repo names, or the like mixed up for your remote deployable web server.
