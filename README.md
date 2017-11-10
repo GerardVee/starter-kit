@@ -1,11 +1,11 @@
-## What is this?
+## Starter-kit
 
 [![Build Status](https://travis-ci.org/GerardVee/starter-kit.svg?branch=master)](https://travis-ci.org/GerardVee/starter-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An example app of my coding style/coding setup.
 
-A starter-kit of sorts.
+A starter-kit.
 
 ## Requirements
 
@@ -80,3 +80,8 @@ I will add more for Travis, and pushing our code to a remote server.
 To have a semented code style/setup for [site](https://gerardvee.com/).
 
 [repository](https://github.com/GerardVee/gerardvee.com) for reference
+
+## Notes
+
+I'd like to thank [this](https://chrisdown.name/2015/09/27/auto-merging-successful-builds-from-travis-ci.html) travis guide. It really helped!
+Of course, the code came from [here](https://github.com/cdown/travis-automerge), feel free to star and look around!
