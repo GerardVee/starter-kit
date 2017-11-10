@@ -1,5 +1,9 @@
 ## What is this?
 
+[![Build Status](https://travis-ci.org/GerardVee/starter-kit.svg?branch=master)](https://travis-ci.org/GerardVee/starter-kit)
+[![license](https://img.shields.io/github/license/GerardVee/starter-kit.svg)]()
+[![Packagist](https://img.shields.io/packagist/v/GerardVee/starter-kit.svg)]()
+
 An example app of my coding style/coding setup.
 
 A starter-kit of sorts.
