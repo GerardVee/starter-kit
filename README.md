@@ -1,8 +1,7 @@
 ## What is this?
 
 [![Build Status](https://travis-ci.org/GerardVee/starter-kit.svg?branch=master)](https://travis-ci.org/GerardVee/starter-kit)
-[![license](https://img.shields.io/github/license/GerardVee/starter-kit.svg)]()
-[![Packagist](https://img.shields.io/packagist/v/GerardVee/starter-kit.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An example app of my coding style/coding setup.
 
