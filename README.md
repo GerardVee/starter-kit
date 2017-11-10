@@ -20,6 +20,16 @@ A starter-kit.
 
 3. global installation of [localtunnel](https://github.com/localtunnel/localtunnel) for seeing the app anywhere and [json-server](https://github.com/typicode/json-server) for server mockups.
 
+4. copying your id_rsa to .travis and naming it deploy_key, getting a [personal access token](https://github.com/settings/tokens), and getting the deployment url for your remote server (it's easiest to run "git init --bare ~/{REPO_NAME}.git", ".git" being optional). Then you must run
+
+```bash
+travis encrypt DEPLOY_REPO="{SSH_USERNAME}@{SSH_SITE}:{REPO_NAME}" --add (REPO_NAME corresponding to your git init name)
+cd .travis
+travis encrypt-file deploy_key --add
+cd ..
+travis encrypt -r {GIT_USERNAME}/starter-kit 'GITHUB_SECRET_TOKEN={YOUR_SECRET_TOKEN}' --add
+```
+
 ## What to modify
  
 Anything you want. It's a starter-kit, have fun, and set up your own work!
