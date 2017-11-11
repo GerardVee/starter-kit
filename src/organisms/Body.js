@@ -9,47 +9,6 @@ import { media } from '../_helpers/media';
 import { retrieveContents } from '../ducks/contents';
 import { retrieveComments, toggleComment } from '../ducks/comments';
 
-/*
-const colorCode =
-{
-    primary:
-    {
-        inline: 'bright yellow',
-        outline: 'none',
-        fill: 'black',
-        complement:
-        {
-            inline: 'bright blue',
-            outline: 'none',
-            fill: 'soft grey'
-        }
-    },
-    secondary:
-    {
-        inline: 'bright purple',
-        outline: 'bright purple',
-        fill: 'none',
-        complement:
-        {
-            inline: 'bright green',
-            outline: 'bright green',
-            fill: 'none'
-        }
-    }
-};
- * OR *
-maybe yellow/black, organge/black; yellow/none, orange/none;
- * OR *
-maybe yellow/black, purple/black; yellow/none, purple/none;
-ALSO
-don't forget react-color and react webgl;
-primary: submit current, primary complement: delete current;
-secondary: edit previous, secondary complement: delete previous;
-4 color schemes, just like spotify, google, etc. all web apps do
-put all your projects on github, and link back to them on gerardvee.com
-additionally, put down some of your projects in your resume, and describe what you did with them, and what's so special about them
-*/
-
 class Body extends React.Component
 {
     componentWillMount()
