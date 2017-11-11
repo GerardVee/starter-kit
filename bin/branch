@@ -1,3 +1,0 @@
-#!/bin/bash -e
-printf "Current branch is %s\\n" \
-    "$TRAVIS_BRANCH" >&2
