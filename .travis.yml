@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - stable
 before_install:
-- openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_iv -in ./travis/deploy_key.enc -out ./travis/deploy_key -d
+- openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_iv -in .travis/deploy_key.enc -out .travis/deploy_key -d
 script:
 - yarn test
 after_success:
