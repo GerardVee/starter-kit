@@ -83,7 +83,7 @@ yarn run build
 yarn run start-prod
 ```
 
-I will add more for Travis, and pushing our code to a remote server.
+I will add more for Travis, and pushing our code to a remote server :).
 
 ## Reason for creation
 
