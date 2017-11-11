@@ -15,7 +15,7 @@ after_success:
 - chmod 600 .travis/deploy_key
 - ssh-add .travis/deploy_key
 - git remote add deploy $DEPLOY_REPO
-- git push deploy HEAD:master
+- git push deploy
 addons:
   ssh_known_hosts:
   - gerardvee.com
