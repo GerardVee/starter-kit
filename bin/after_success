@@ -1,0 +1,13 @@
+#!/bin/bash -e
+if [ "$TRAVIS_BRANCH" = "master" ]
+then
+    eval "$(ssh-agent -s)"
+    chmod 600 .travis/deploy_key
+    ssh-add .travis/deploy_key
+    git remote add deploy "$DEPLOY_REPO"
+    git push deploy
+else
+    curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
+    chmod a+x /tmp/travis-automerge
+    BRANCHES_TO_MERGE_REGEX='^dev' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=GerardVee/starter-kit /tmp/travis-automerge
+fi
