@@ -1,6 +1,7 @@
 #!/bin/bash -e
 if [ "$TRAVIS_BRANCH" = "master" ]
 then
+    git pull
     git status
     eval "$(ssh-agent -s)"
     chmod 600 .travis/deploy_key
