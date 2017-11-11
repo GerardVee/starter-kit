@@ -2,13 +2,15 @@ language: node_js
 node_js:
 - stable
 before_install:
-- bin/before_install
+- openssl aes-256-cbc -K $encrypted_19d17ca168ea_key -iv $encrypted_19d17ca168ea_iv
+  -in deploy_key.enc -out .travis/deploy_key -d
 script:
 - yarn test
 after_success:
 - curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
 - chmod a+x /tmp/travis-automerge
-- BRANCHES_TO_MERGE_REGEX='^dev' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=GerardVee/starter-kit /tmp/travis-automerge
+- BRANCHES_TO_MERGE_REGEX='^dev' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=GerardVee/starter-kit
+  /tmp/travis-automerge
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/deploy_key
 - ssh-add .travis/deploy_key
@@ -16,8 +18,8 @@ after_success:
 - git push deploy HEAD:master
 addons:
   ssh_known_hosts:
-  - gerardvee.com #only for me, feel free to change
-  - 107.170.197.76 # same as above
+  - gerardvee.com
+  - 107.170.197.76
 env:
   global:
   - secure: HXz8hN7iLKmuqpp+lek4WCmYqwoGRqHtOPKy9snc5AC16lavGrehSweE9RzhKXZJyjw6pVRgBaeA/Z10xQFavnWEeA0AZKEEmxiOtNhRA922ZrMA1h0OBVbNUkFzkBZqfnP8WMb3yXDSrAoKiKbNxk4QQro8HjTJetar3ecWaH57b+Sp5DOCyWVxXIinfhySfGBvh8Q5TgM7zfsHfUIhX/bOzab1bpclmt2MGTJxMZG0CsslS5kXHyjsqNc1eA99aMftlmaUdxXfqMMFrVFN/0YhPwM/CFJ1uKGIJrlFBmfg1oSiHK5BT7nosdt4gfy5ZrdhJohIOYsv3B5XhZ31qDk0ciRfOMr8xw2YIp87Wu+H6rQA7wUq0WQFUATq5OTBn8N2fTDDfGbLMFH6Mm6UnLitL+KJ8eYtCn6mZNJwik7xNoVsXn9AeZ9X/iQFWra6b/mwKJbz7eb8C9neizvhQ0wqSHp2JJx5lPmgVCmPQqSIPuKHycwCeOPuZCjwEryUQPSP9eHglBSgHebn4pu/AvEPhhcf51MssjtimN1yyOgiwOAdWpCCSIdD8uVdmzy0J1LPc6lTJ+U7C+ijfs11Ml7nFnHcDb3vR0A+PdCVtNDNvrQU3wYBKiEHeY3szdp/Puwq3NWN9jRbbEa/LQ/4v2GllnS3jJYqpqpDuCE5UR8=
