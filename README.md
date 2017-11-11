@@ -23,7 +23,7 @@ A starter-kit.
 4. copying your id_rsa to .travis and naming it deploy_key, getting a [personal access token](https://github.com/settings/tokens), and getting the deployment url for your remote server (it's easiest to run "git init --bare ~/{REPO_NAME}.git", ".git" being optional). Also don't forget to login to travis via travis login. Then you must run
 
 ```bash
-travis encrypt DEPLOY_REPO="{SSH_USERNAME}@{SSH_SITE}:{REPO_NAME}" --add (REPO_NAME corresponding to your git init name)
+travis encrypt DEPLOY_REPO="ssh://{SSH_USERNAME}@{SSH_SITE}:/{PATH_TO_PROJECT}/{REPO_NAME}" --add (REPO_NAME corresponding to your git init name)
 cd .travis
 travis encrypt-file deploy_key --add
 cd ..
